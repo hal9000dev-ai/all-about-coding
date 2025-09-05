@@ -7,42 +7,39 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: #02343F;
+        background-color: #F0EDCC;
         margin: 0;
         padding: 0;
       }
-      header {
-        text-align: center;
-        /* Center the image */
-        padding: 20px;
-        /* Add some padding */
-        background-color: #02343F;
-        /* Optional background color */
-      }
-      .header-img {
-        max-width: 100%;
-        /* Make image responsive */
-        height: auto;
-        /* Maintain aspect ratio */
-        max-height: 200px;
-        /* Optional: Limit image height */
-        border-radius: 20px;
-      }
       section {
-        margin: 20px;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        background-color: #fff;
+        width: 70%;
+        /* Keeps the section centered and proportional */
+        max-width: 800px;
+        /* Limits maximum width for better readability on large screens */
+        margin: 20px auto;
+        /* Centers the section horizontally with vertical spacing */
+        padding: 20px;
+        /* Adds more padding for better spacing inside */
+        border: 2px solid #bbb;
+        /* Slightly thicker border with a softer color for elegance */
+        border-radius: 12px;
+        /* Rounded corners for a modern look */
+        background-color: #F0EDCC;
+        /* Consistent background color */
         max-height: 400px;
-        /* Adjust as needed */
-        overflow-y: scroll;
-        /* Always show vertical scrollbar */
-        padding: 15px;
-        border: 1px solid #ccc;
-        margin-bottom: 20px;
-        background: #02343F;
-        border-radius: 8px;
+        /* Keeps height manageable, with scroll if content overflows */
+        overflow-y: auto;
+        /* Adds scrollbar only when needed for better UX */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow for depth */
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        /* Smooth hover effects */
+      }
+      section:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        /* Slight lift effect on hover */
+        transform: translateY(-2px);
+        /* Slight lift for interactivity */
       }
       .section-title {
         font-size: 24px;
@@ -50,9 +47,16 @@
         color: #333;
         text-align: center;
       }
-      .video-links {
-        list-style: none;
-        padding: 0;
+      .video-links li {
+        display: flex;
+        flex-direction: column;
+        /* Stack image and title vertically */
+        align-items: center;
+        /* Center items horizontally */
+        text-align: center;
+        /* Center text inside the divs if needed */
+        margin-bottom: 20px;
+        /* Keep your spacing */
       }
       .video-links li {
         margin-bottom: 20px;
@@ -61,7 +65,7 @@
       }
       .video-links a {
         text-decoration: none;
-        color: #F0EDCC;
+        color: #02343F;
         font-size: 16px;
         margin-left: 10px;
         line-height: 1.5;
@@ -70,8 +74,8 @@
         text-decoration: underline;
       }
       .thumbnail {
-        width: 200px;
-        height: 120px;
+        width: 280px;
+        height: 200px;
         object-fit: cover;
         border-radius: 8px;
       }
@@ -84,140 +88,34 @@
         margin-bottom: 5px;
       }
       .original-title {
-        text-align: center;
-        color: #02343F;
-        /* White text */
-        font-weight: bold;
-        /* Bold text */
-        background-color: #F0EDCC;
-      }
-      /* Table of Contents Styling */
-      .toc {
-        background-color: #F0EDCC;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        position: relative;
-        top: 20px;
-        width: 200px;
-        margin: 50px auto;
-        text-align: center;
-      }
-      .toc h2 {
-        margin-top: 0;
-        color: #02343F;
-        font-size: 1.5em;
-      }
-      .toc-button {
         display: block;
-        width: 100%;
-        height: 50%;
-        padding: 10px;
-        margin: 10px 0;
-        border: none;
-        border-radius: 5px;
-        font-size: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s;
+        /* Ensures it behaves like a block element if needed */
+        text-align: center;
+        color: #F0EDCC;
+        /* Light cream color for text */
         font-weight: bold;
-      }
-      .js-button {
         background-color: #02343F;
-        /* JavaScript yellow */
-        color: #fff;
-        font-size: 10px
+        /* Deep blue background */
+        padding: 15px 20px;
+        /* Increased padding for better spacing */
+        font-size: 1em;
+        /* Larger font size for emphasis */
+        border-radius: 8px;
+        /* Rounded corners for a modern look */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Subtle shadow for depth */
+        margin: 20px auto;
+        /* Centered with some vertical margin */
+        max-width: 400px;
+        /* Optional: limit width for readability on large screens */
+        transition: background-color 0.3s, transform 0.3s;
+        /* Smooth hover effects */
+        overflow: hidden;
       }
-      .js-button:hover {
-        transform: translateY(-3px);
-      }
-      .css-button {
-        background-color: #02343F;
-        /* CSS blue */
-        color: #fff;
-        font-size: 10px
-      }
-      .css-button:hover {
-        transform: translateY(-3px);
-      }
-      .html-button {
-        background-color: #02343F;
-        color: #fff;
-        font-size: 10px
-      }
-      .html-button:hover {
-        transform: translateY(-3px);
-      }
-      .other-button {
-        background-color: #02343F;
-        color: #fff;
-        font-size: 10px
-      }
-      .other-button:hover {
-        transform: translateY(-3px);
-      }
-      .docker-button {
-        background-color: #02343F;
-        color: #fff;
-        font-size: 10px
-      }
-      .docker-button:hover {
-        transform: translateY(-3px);
-      }
-      .mern-stack-button {
-        background-color: #02343F;
-        color: #fff;
-        font-size: 10px
-      }
-      .mern-stack-button:hover {
-        transform: translateY(-3px);
-      }
-      .web-development-button {
-        background-color: #02343F;
-        color: #fff;
-        font-size: 10px
-      }
-      .web-development-button:hover {
-        transform: translateY(-3px);
-      }
-      .syntax-and-coding-button {
-        background-color: #02343F;
-        color: #fff;
-        font-size: 10px
-      }
-      .syntax-and-coding-button:hover {
-        transform: translateY(-3px);
-      }
-      .devops-button {
-        background-color: #02343F;
-        color: #fff;
-        font-size: 10px
-      }
-      .devops-button:hover {
-        transform: translateY(-3px);
-      }
-      .api-button {
-        background-color: #02343F;
-        color: #fff;
-        font-size: 10px
-      }
-      .api-button:hover {
-        transform: translateY(-3px);
-      }
-      .git-and-github-button {
-        background-color: #02343F;
-        color: #fff;
-        font-size: 10px
-      }
-      .git-and-github-button:hover {
-        transform: translateY(-3px);
-      }
-      .linux-button {
-        background-color: #02343F;
-        color: #fff;
-        font-size: 10px
-      }
-      .linux-button:hover {
-        transform: translateY(-3px);
+      .original-title:hover {
+        /* Slightly lighter blue on hover */
+        transform: translateY(-5px);
+        /* Slight lift effect on hover */
       }
       /* Smooth scrolling */
       html {
@@ -225,79 +123,72 @@
       }
       /* Navbar styles */
       .navbar {
-        background-color: #F0EDCC;
-        /* Darker shade for contrast */
-        padding: 10px 0;
+        background-color: #02343F;
+        padding: 12px 20px;
         position: sticky;
         top: 0;
         width: 100%;
         z-index: 999;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.3s ease;
       }
       .navbar-container {
-        width: 80%;
+        max-width: 1200px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 5px;
+        padding: 0;
       }
+      /* Style individual links for a cleaner look */
       .nav-link {
-        color: #02343F;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 8px 12px;
-        border-radius: 4px;
-        transition: background-color 0.3s, transform 0.2s;
-        font-size: 14px;
-      }
-      .nav-link:hover {
-        background-color: #02343F;
-        transform: translateY(-2px);
         color: #F0EDCC;
+        /* Light Cream */
+        text-decoration: none;
+        font-weight: 600;
+        padding: 10px 16px;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+        position: relative;
+      }
+      /* Add a hover effect with background color and slight lift */
+      .nav-link:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        color: #02343F;
+        background: #F0EDCC;
+      }
+      /* Optional: Active link styling to indicate current section */
+      .nav-link:active,
+      .nav-link:focus {
+        outline: none;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
       }
     </style>
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="#js-section" class="nav-link">JavaScript</a>
-        <a href="#css-section" class="nav-link">CSS</a>
-        <a href="#html-section" class="nav-link">HTML</a>
-        <a href="#other-section" class="nav-link">Other</a>
-        <a href="#docker-section" class="nav-link">Docker</a>
-        <a href="#mern-stack-section" class="nav-link">MERN Stack</a>
-        <a href="#web-development-section" class="nav-link">Web Dev</a>
-        <a href="#syntax-and-coding-section" class="nav-link">Syntax</a>
-        <a href="#devops-section" class="nav-link">DevOps</a>
-        <a href="#api-section" class="nav-link">API</a>
-        <a href="#git-and-github-section" class="nav-link">Git & GitHub</a>
-        <a href="#linux-section" class="nav-link">Linux</a>
+        <a href="#js-title" class="nav-link">JavaScript</a>
+        <a href="#css-title" class="nav-link">CSS</a>
+        <a href="#html-title" class="nav-link">HTML</a>
+        <a href="#other-title" class="nav-link">Other</a>
+        <a href="#docker-title" class="nav-link">Docker</a>
+        <a href="#mern-stack-title" class="nav-link">MERN Stack</a>
+        <a href="#web-development-title" class="nav-link">Web Dev</a>
+        <a href="#syntax-and-coding-title" class="nav-link">Syntax and Coding</a>
+        <a href="#devops-title" class="nav-link">DevOps</a>
+        <a href="#api-title" class="nav-link">API</a>
+        <a href="#git-and-github-title" class="nav-link">Git & GitHub</a>
+        <a href="#linux-title" class="nav-link">Linux</a>
       </div>
     </nav>
-    <header>
-      <img src="https://i.postimg.cc/VvVLbSFC/Picsart-25-08-24-22-26-27-742.jpg" alt="Header Image" class="header-img">
-    </header>
-
-    <!-- <div class="container">
-      <div class="toc">
-        <h2>Table of Contents</h2>
-        <button class="toc-button js-button" onclick="scrollToSection('js-section')">JavaScript Section</button>
-        <button class="toc-button css-button" onclick="scrollToSection('css-section')">CSS Section</button>
-        <button class="toc-button html-button" onclick="scrollToSection('html-section')">HTML Section</button>
-        <button class="toc-button other-button" onclick="scrollToSection('other-section')">Other Section</button>
-        <button class="toc-button docker-button" onclick="scrollToSection('docker-section')">Docker Section</button>
-        <button class="toc-button mern-stack-button" onclick="scrollToSection('mern-stack-section')">MERN Stack Section</button>
-        <button class="toc-button web-development-button" onclick="scrollToSection('web-development-section')">Web Development</button>
-        <button class="toc-button syntax-and-coding-button" onclick="scrollToSection('syntax-and-coding-section')">Syntax and Coding</button>
-        <button class="toc-button devops-button" onclick="scrollToSection('devops-section')">DevOps</button>
-        <button class="toc-button api-button" onclick="scrollToSection('api-section')">API</button>
-        <button class="toc-button git-and-github-button" onclick="scrollToSection('git-and-github-section')">Git and GitHub Section</button>
-        <button class="toc-button linux-button" onclick="scrollToSection('linux-section')">Linux Section</button>
-      </div> -->
 
     <!-- JavaScript Section -->
-    <section class="original-title">JavaScript</section>
+    <section class="original-title" id="js-title">JavaScript</section>
     <section id="js-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -393,7 +284,7 @@
     </section>
 
     <!-- CSS Section -->
-    <section class="original-title">CSS</section>
+    <section class="original-title" id="css-title">CSS</section>
     <section id="css-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -507,7 +398,7 @@
     </section>
 
     <!-- HTML Section -->
-    <section class="original-title">HTML</section>
+    <section class="original-title" id="html-title">HTML</section>
     <section id="html-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -547,7 +438,7 @@
         <!-- Add more HTML videos as needed -->
       </ul>
     </section>
-    <section class="original-title">Other</section>
+    <section class="original-title" id="other-title">Other</section>
     <section id="other-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -674,7 +565,7 @@
           </a>
         </li>
     </section>
-    <section class="original-title">Docker</section>
+    <section class="original-title" id="docker-title">Docker</section>
     <section id="docker-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -699,7 +590,7 @@
           </a>
         </li>
     </section>
-    <section class="original-title">MERN Stack</section>
+    <section class="original-title" id="mern-stack-title">MERN Stack</section>
     <section id="mern-stack-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -730,7 +621,7 @@
           </a>
         </li>
     </section>
-    <section class="original-title">Web Development</section>
+    <section class="original-title" id="web-development-title">Web Development</section>
     <section id="web-development-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -763,7 +654,7 @@
           </a>
         </li>
     </section>
-    <section class="original-title">Syntax and Coding</section>
+    <section class="original-title" id="syntax-and-coding-title">Syntax and Coding</section>
     <section id="syntax-and-coding-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -812,7 +703,7 @@
           </a>
         </li>
     </section>
-    <section class="original-title">DevOps</section>
+    <section class="original-title" id="devops-title">DevOps</section>
     <section id="devops-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -831,7 +722,7 @@
           </a>
         </li>
     </section>
-    <section class="original-title">API</section>
+    <section class="original-title" id="api-title">API</section>
     <section id="api-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -850,7 +741,7 @@
           </a>
         </li>
     </section>
-    <section class="original-title">Git and Github</section>
+    <section class="original-title" id="git-and-github-title">Git and GitHub</section>
     <section id="git-and-github-section">
       <div class="section-title"> </div>
       <ul class="video-links">
@@ -863,7 +754,7 @@
           </a>
         </li>
     </section>
-    <section class="original-title">Linux</section>
+    <section class="original-title" id="linux-title">Linux</section>
     <section id="linux-section">
       <div class="section-title"> </div>
       <ul class="video-links">
