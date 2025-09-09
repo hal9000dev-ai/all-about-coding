@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All About Coding</title>
+
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -18,7 +19,6 @@
         --border-radius: 12px;
         --transition: all 0.3s ease;
       }
-
       /* Dark mode variables */
       [data-theme="dark"] {
         --primary-color: #F0EDCC;
@@ -29,13 +29,11 @@
         --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.4);
       }
-
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-
       body {
         font-family: 'Inter', Arial, sans-serif;
         background-color: var(--secondary-color);
@@ -44,7 +42,6 @@
         padding: 0;
         transition: var(--transition);
       }
-
       /* Skip to content for accessibility */
       .skip-to-content {
         position: absolute;
@@ -56,11 +53,9 @@
         z-index: 100;
         transition: top 0.3s;
       }
-
       .skip-to-content:focus {
         top: 0;
       }
-
       /* Header and Navigation */
       .header {
         position: sticky;
@@ -71,7 +66,6 @@
         z-index: 999;
         transition: var(--transition);
       }
-
       .nav-container {
         max-width: 1200px;
         margin: 0 auto;
@@ -80,7 +74,6 @@
         justify-content: space-between;
         align-items: center;
       }
-
       .logo {
         color: var(--secondary-color);
         font-size: 1.5rem;
@@ -90,14 +83,12 @@
         align-items: center;
         gap: 0.5rem;
       }
-
       .nav-links {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         list-style: none;
       }
-
       .nav-link {
         color: var(--secondary-color);
         text-decoration: none;
@@ -106,20 +97,18 @@
         border-radius: 6px;
         transition: var(--transition);
       }
-
       .nav-link:hover {
         background-color: var(--secondary-color);
         color: var(--primary-color);
         transform: translateY(-2px);
       }
-
       .nav-actions {
         display: flex;
         gap: 1rem;
         align-items: center;
       }
-
-      .theme-toggle, .search-toggle {
+      .theme-toggle,
+      .search-toggle {
         background: none;
         border: none;
         color: var(--secondary-color);
@@ -129,11 +118,10 @@
         border-radius: 50%;
         transition: var(--transition);
       }
-
-      .theme-toggle:hover, .search-toggle:hover {
+      .theme-toggle:hover,
+      .search-toggle:hover {
         background-color: rgba(255, 255, 255, 0.1);
       }
-
       /* Search Bar */
       .search-container {
         position: relative;
@@ -142,11 +130,9 @@
         padding: 0 1rem;
         display: none;
       }
-
       .search-container.active {
         display: block;
       }
-
       .search-input {
         width: 100%;
         padding: 0.75rem 1rem 0.75rem 2.5rem;
@@ -157,12 +143,10 @@
         color: var(--text-color);
         transition: var(--transition);
       }
-
       .search-input:focus {
         outline: none;
         border-color: var(--accent-color);
       }
-
       .search-icon {
         position: absolute;
         left: 1rem;
@@ -170,7 +154,6 @@
         transform: translateY(-50%);
         color: var(--text-color);
       }
-
       /* Category Navigation */
       .category-nav {
         background-color: var(--primary-color);
@@ -182,27 +165,22 @@
         scrollbar-width: thin;
         scrollbar-color: var(--secondary-color) var(--primary-color);
       }
-
       .category-nav::-webkit-scrollbar {
         height: 8px;
       }
-
       .category-nav::-webkit-scrollbar-track {
         background: var(--primary-color);
       }
-
       .category-nav::-webkit-scrollbar-thumb {
         background-color: var(--secondary-color);
         border-radius: 4px;
       }
-
       .category-list {
         display: flex;
         gap: 0.5rem;
         padding: 0 1rem;
         list-style: none;
       }
-
       .category-link {
         color: var(--secondary-color);
         text-decoration: none;
@@ -212,19 +190,16 @@
         transition: var(--transition);
         white-space: nowrap;
       }
-
       .category-link:hover {
         background-color: var(--secondary-color);
         color: var(--primary-color);
       }
-
       /* Main Content */
       .container {
         width: 90%;
         max-width: 1200px;
         margin: 2rem auto;
       }
-
       /* Section Styles */
       .section-title {
         font-size: 24px;
@@ -239,28 +214,23 @@
         box-shadow: var(--shadow);
         transition: var(--transition);
       }
-
       [data-theme="dark"] .section-title {
         color: var(--primary-color);
         background-color: var(--secondary-color);
       }
-
       .section-title:hover {
         transform: translateY(-5px);
         box-shadow: var(--shadow-hover);
       }
-
       .video-section {
         margin-bottom: 3rem;
       }
-
       .video-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 1.5rem;
         margin-top: 1.5rem;
       }
-
       .video-card {
         background-color: var(--secondary-color);
         border: 2px solid var(--border-color);
@@ -271,30 +241,25 @@
         display: flex;
         flex-direction: column;
       }
-
       .video-card:hover {
         transform: translateY(-5px);
         box-shadow: var(--shadow-hover);
       }
-
       .video-thumbnail {
         position: relative;
         width: 100%;
         height: 180px;
         overflow: hidden;
       }
-
       .video-thumbnail img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: var(--transition);
       }
-
       .video-card:hover .video-thumbnail img {
         transform: scale(1.05);
       }
-
       .video-duration {
         position: absolute;
         bottom: 8px;
@@ -305,14 +270,12 @@
         border-radius: 4px;
         font-size: 0.8rem;
       }
-
       .video-info {
         padding: 1rem;
         flex-grow: 1;
         display: flex;
         flex-direction: column;
       }
-
       .video-title {
         font-weight: bold;
         margin-bottom: 0.5rem;
@@ -323,7 +286,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
       }
-
       .video-meta {
         display: flex;
         justify-content: space-between;
@@ -332,14 +294,12 @@
         color: var(--text-color);
         opacity: 0.7;
       }
-
       .video-actions {
         display: flex;
         justify-content: space-between;
         padding: 0.5rem 1rem;
         border-top: 1px solid var(--border-color);
       }
-
       .video-action-btn {
         background: none;
         border: none;
@@ -352,16 +312,13 @@
         align-items: center;
         gap: 0.25rem;
       }
-
       .video-action-btn:hover {
         background-color: var(--secondary-color);
         color: var(--accent-color);
       }
-
       .video-action-btn.saved {
         color: var(--accent-color);
       }
-
       /* Filter and Sort Controls */
       .controls {
         display: flex;
@@ -370,13 +327,12 @@
         flex-wrap: wrap;
         gap: 1rem;
       }
-
-      .filter-controls, .sort-controls {
+      .filter-controls,
+      .sort-controls {
         display: flex;
         gap: 0.5rem;
         align-items: center;
       }
-
       .control-btn {
         background-color: var(--primary-color);
         color: var(--secondary-color);
@@ -387,16 +343,13 @@
         transition: var(--transition);
         font-weight: 600;
       }
-
       .control-btn:hover {
         background-color: var(--accent-color);
         transform: translateY(-2px);
       }
-
       .control-btn.active {
         background-color: var(--accent-color);
       }
-
       /* Back to Top Button */
       .back-to-top {
         position: fixed;
@@ -417,17 +370,14 @@
         transition: var(--transition);
         z-index: 99;
       }
-
       .back-to-top.visible {
         opacity: 1;
         visibility: visible;
       }
-
       .back-to-top:hover {
         background-color: var(--accent-color);
         transform: translateY(-5px);
       }
-
       /* Footer */
       footer {
         background-color: var(--primary-color);
@@ -441,7 +391,6 @@
         box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         margin-top: 3rem;
       }
-
       .footer-container {
         display: flex;
         flex-wrap: wrap;
@@ -450,18 +399,15 @@
         max-width: 1200px;
         margin: 0 auto;
       }
-
       .footer-section {
         flex: 1 1 200px;
         margin: 1rem;
         min-width: 200px;
         transition: var(--transition);
       }
-
       .footer-section:hover {
         transform: translateY(-5px);
       }
-
       .footer-section h3 {
         margin-bottom: 1rem;
         font-size: 1.3rem;
@@ -470,17 +416,14 @@
         padding-bottom: 0.5rem;
         letter-spacing: 1px;
       }
-
       footer a {
         color: var(--secondary-color);
         text-decoration: none;
         transition: var(--transition);
       }
-
       footer a:hover {
         text-decoration: underline;
       }
-
       .footer-bottom {
         text-align: center;
         margin-top: 1.5rem;
@@ -488,40 +431,33 @@
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         width: 100%;
       }
-
       /* Responsive Styles */
       @media (max-width: 768px) {
         .nav-links {
           display: none;
         }
-        
         .video-grid {
           grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         }
-        
         .controls {
           flex-direction: column;
         }
       }
-
       @media (max-width: 480px) {
         .video-grid {
           grid-template-columns: 1fr;
         }
-        
         .footer-container {
           flex-direction: column;
           align-items: center;
         }
       }
-
       /* Loading skeleton */
       .skeleton {
         background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
         background-size: 200% 100%;
         animation: loading 1.5s infinite;
       }
-
       @keyframes loading {
         0% {
           background-position: 200% 0;
@@ -530,29 +466,24 @@
           background-position: -200% 0;
         }
       }
-
       .skeleton-card {
         border-radius: var(--border-radius);
         overflow: hidden;
       }
-
       .skeleton-thumbnail {
         height: 180px;
       }
-
       .skeleton-title {
         height: 20px;
         margin: 1rem;
         border-radius: 4px;
       }
-
       .skeleton-meta {
         height: 15px;
         margin: 0 1rem 1rem;
         border-radius: 4px;
         width: 60%;
       }
-
       /* Toast notification */
       .toast {
         position: fixed;
@@ -569,7 +500,6 @@
         transition: var(--transition);
         z-index: 1000;
       }
-
       .toast.show {
         transform: translateX(-50%) translateY(0);
         opacity: 1;
@@ -579,14 +509,12 @@
   </head>
   <body>
     <a href="#content" class="skip-to-content">Skip to content</a>
-    
     <header class="header">
       <div class="nav-container">
         <a href="#" class="logo">
           <i class="fas fa-code"></i>
           All About Coding
         </a>
-        
         <nav>
           <ul class="nav-links">
             <li><a href="#hero" class="nav-link">Home</a></li>
@@ -595,7 +523,6 @@
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
-        
         <div class="nav-actions">
           <button class="search-toggle" id="search-toggle" aria-label="Toggle search">
             <i class="fas fa-search"></i>
@@ -605,13 +532,11 @@
           </button>
         </div>
       </div>
-      
       <div class="search-container" id="search-container">
         <i class="fas fa-search search-icon"></i>
         <input type="text" class="search-input" id="search-input" placeholder="Search videos...">
       </div>
     </header>
-    
     <nav class="category-nav">
       <ul class="category-list">
         <li><a href="#js-title" class="category-link">JavaScript</a></li>
@@ -628,12 +553,11 @@
         <li><a href="#linux-title" class="category-link">Linux</a></li>
       </ul>
     </nav>
-    
     <main id="content" class="container">
+
       <!-- JavaScript Section -->
       <section class="video-section" id="js-section">
         <h2 class="section-title" id="js-title">JavaScript</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
@@ -641,19 +565,18 @@
             <button class="control-btn" data-filter="advanced">Advanced</button>
             <button class="control-btn" data-filter="project">Projects</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="js-videos">
+
           <!-- JavaScript Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="JavaScript Complete Course" data-category="beginner">
             <div class="video-thumbnail">
-              <img src="https://img.youtube.com/vi/cpoXLj24BDY/hqdefault.jpg" alt="JavaScript Complete Course" loading="lazy">
+              <img src="https://img.youtube.com/vi/cpoXLj24BDY/hqdefault.jpg" alt="JavaScript Complete Course" loading="lazy" data-video-id="cpoXLj24BDY" onerror="this.onerror=null; this.src='https://img.youtube.com/vi/cpoXLj24BDY/sddefault.jpg';" onerror="this.onerror=null; this.src='https://img.youtube.com/vi/cpoXLj24BDY/mqdefault.jpg';" onerror="this.onerror=null; this.src='https://img.youtube.com/vi/cpoXLj24BDY/default.jpg';" onerror="this.onerror=null; this.src='https://via.placeholder.com/320x180?text=JavaScript+Complete+Course';">
               <span class="video-duration">4:20:15</span>
             </div>
             <div class="video-info">
@@ -668,13 +591,12 @@
                 <i class="far fa-bookmark"></i>
                 <span>Save</span>
               </button>
-              <a href="https://youtu.be/cpoXLj24BDY?si=j8p5Chpaaohw2znb" target="_blank" class="video-action-btn" aria-label="Watch video">
+              <a href="https://youtu.be/cpoXLj24BDY?si=mJh2SDmSQ21LUF3H" target="_blank" class="video-action-btn" aria-label="Watch video">
                 <i class="fas fa-play"></i>
                 <span>Watch</span>
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript Variables & Data Types" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/ajdRvxDWH4w/hqdefault.jpg" alt="JavaScript Variables & Data Types" loading="lazy">
@@ -698,7 +620,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript Operators and Conditionals" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/Zg4-uSjxosE/hqdefault.jpg" alt="JavaScript Operators and Conditionals" loading="lazy">
@@ -722,7 +643,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript Loops and Strings" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/P0XMXqDGttU/hqdefault.jpg" alt="JavaScript Loops and Strings" loading="lazy">
@@ -746,7 +666,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript Arrays" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/gFWhbjzowrM/hqdefault.jpg" alt="JavaScript Arrays" loading="lazy">
@@ -770,7 +689,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript Functions" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/P0XMXqDGttU/hqdefault.jpg" alt="JavaScript Functions" loading="lazy">
@@ -794,7 +712,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript DOM Manipulation" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/7zcXPCt8Ck0/hqdefault.jpg" alt="JavaScript DOM Manipulation" loading="lazy">
@@ -818,7 +735,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript DOM Events" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/_i-uLJAh79U/hqdefault.jpg" alt="JavaScript DOM Events" loading="lazy">
@@ -842,7 +758,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Tic Tac Toe Game" data-category="project">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/SqrppLEljkY/hqdefault.jpg" alt="Tic Tac Toe Game" loading="lazy">
@@ -866,7 +781,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Stone Paper Scissors Game" data-category="project">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/_V33HCZWLDQ/hqdefault.jpg" alt="Stone Paper Scissors Game" loading="lazy">
@@ -890,7 +804,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript Classes and Objects" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/N-O4w6PynGY/hqdefault.jpg" alt="JavaScript Classes and Objects" loading="lazy">
@@ -914,7 +827,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript Async Programming" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/d3jXofmQm44/hqdefault.jpg" alt="JavaScript Async Programming" loading="lazy">
@@ -938,7 +850,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript Fetch API" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/CyGodpqcid4/hqdefault.jpg" alt="JavaScript Fetch API" loading="lazy">
@@ -964,11 +875,10 @@
           </div>
         </div>
       </section>
-      
+
       <!-- CSS Section -->
       <section class="video-section" id="css-section">
         <h2 class="section-title" id="css-title">CSS</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
@@ -976,15 +886,14 @@
             <button class="control-btn" data-filter="advanced">Advanced</button>
             <button class="control-btn" data-filter="project">Projects</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="css-videos">
+
           <!-- CSS Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="CSS Selectors" data-category="beginner">
             <div class="video-thumbnail">
@@ -1009,7 +918,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Properties" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/4nC4VXHlys8/hqdefault.jpg" alt="CSS Properties" loading="lazy">
@@ -1033,7 +941,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Box Model" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/C01LeeMhwHc/hqdefault.jpg" alt="CSS Box Model" loading="lazy">
@@ -1057,7 +964,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Specificity" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/wKPlQkOdpFQ/hqdefault.jpg" alt="CSS Specificity" loading="lazy">
@@ -1081,7 +987,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Forms" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/6Cpd63_WXdI/hqdefault.jpg" alt="CSS Forms" loading="lazy">
@@ -1105,7 +1010,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Debugging" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/l-EkcthUMl4/hqdefault.jpg" alt="CSS Debugging" loading="lazy">
@@ -1129,7 +1033,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Responsiveness" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/p870o46o1bM/hqdefault.jpg" alt="CSS Responsiveness" loading="lazy">
@@ -1153,7 +1056,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Floats and Position" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/xpoWxFyGuC8/hqdefault.jpg" alt="CSS Floats and Position" loading="lazy">
@@ -1177,7 +1079,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Flexbox" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/zts6uNVnCNs/hqdefault.jpg" alt="CSS Flexbox" loading="lazy">
@@ -1201,7 +1102,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Grid" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/xBSlwwitD5U/hqdefault.jpg" alt="CSS Grid" loading="lazy">
@@ -1225,7 +1125,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Animations" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/Xdhdgl0Ju4k/hqdefault.jpg" alt="CSS Animations" loading="lazy">
@@ -1249,7 +1148,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Mega Project" data-category="project">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/IZa8pbR8CWs/hqdefault.jpg" alt="CSS Mega Project" loading="lazy">
@@ -1273,7 +1171,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CSS Design Update" data-category="project">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/ywK_wgQwKJY/hqdefault.jpg" alt="CSS Design Update" loading="lazy">
@@ -1297,7 +1194,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Bootstrap Introduction" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/DUiYVJIVNcA/hqdefault.jpg" alt="Bootstrap Introduction" loading="lazy">
@@ -1321,7 +1217,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Bootstrap Customization" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/ddWKdSS5TaQ/hqdefault.jpg" alt="Bootstrap Customization" loading="lazy">
@@ -1345,7 +1240,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Bootstrap Grid" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/5NxYn0GiApg/hqdefault.jpg" alt="Bootstrap Grid" loading="lazy">
@@ -1369,7 +1263,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Bootstrap Components" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/IwlAhfeSnp8/hqdefault.jpg" alt="Bootstrap Components" loading="lazy">
@@ -1395,11 +1288,10 @@
           </div>
         </div>
       </section>
-      
+
       <!-- HTML Section -->
       <section class="video-section" id="html-section">
         <h2 class="section-title" id="html-title">HTML</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
@@ -1407,15 +1299,14 @@
             <button class="control-btn" data-filter="advanced">Advanced</button>
             <button class="control-btn" data-filter="project">Projects</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="html-videos">
+
           <!-- HTML Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="HTML Tutorial for Beginners" data-category="beginner">
             <div class="video-thumbnail">
@@ -1440,7 +1331,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="HTML Course Introduction" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/Rek0NWPCNOc/hqdefault.jpg" alt="HTML Course Introduction" loading="lazy">
@@ -1464,7 +1354,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="HTML Elements" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/2QR11oDukn4/hqdefault.jpg" alt="HTML Elements" loading="lazy">
@@ -1488,7 +1377,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="HTML Media Elements" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/jRAZlTEZi9I/hqdefault.jpg" alt="HTML Media Elements" loading="lazy">
@@ -1512,7 +1400,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="HTML Mega Project" data-category="project">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/jRAZlTEZi9I/hqdefault.jpg" alt="HTML Mega Project" loading="lazy">
@@ -1538,11 +1425,10 @@
           </div>
         </div>
       </section>
-      
+
       <!-- Other Section -->
       <section class="video-section" id="other-section">
         <h2 class="section-title" id="other-title">Other</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
@@ -1550,15 +1436,14 @@
             <button class="control-btn" data-filter="advanced">Advanced</button>
             <button class="control-btn" data-filter="career">Career</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="other-videos">
+
           <!-- Other Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="Backend Development" data-category="advanced">
             <div class="video-thumbnail">
@@ -1583,7 +1468,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="JavaScript Mistakes" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/yN2yBmSHduI/hqdefault.jpg" alt="JavaScript Mistakes" loading="lazy">
@@ -1607,7 +1491,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Command Prompt" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/aiZN2ncIItM/hqdefault.jpg" alt="Command Prompt" loading="lazy">
@@ -1631,7 +1514,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="DDOS Attack" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/WO4M_A_mtBI/hqdefault.jpg" alt="DDOS Attack" loading="lazy">
@@ -1655,7 +1537,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Coding Languages" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/5QUSeBAMjoo/hqdefault.jpg" alt="Coding Languages" loading="lazy">
@@ -1679,7 +1560,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="AI Tools" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/b7ttYWrJzCI/hqdefault.jpg" alt="AI Tools" loading="lazy">
@@ -1703,7 +1583,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Web Developer Mistakes" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/5AhLRjkFeZk/hqdefault.jpg" alt="Web Developer Mistakes" loading="lazy">
@@ -1727,7 +1606,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="DSA vs Development" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/9H_rX1vHuoM/hqdefault.jpg" alt="DSA vs Development" loading="lazy">
@@ -1751,7 +1629,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Learn Coding" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/0HyIda5eub8/hqdefault.jpg" alt="Learn Coding" loading="lazy">
@@ -1775,7 +1652,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Coding for Placements" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/AgyTHzjBS-c/hqdefault.jpg" alt="Coding for Placements" loading="lazy">
@@ -1799,7 +1675,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Password Hacking" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/zlZ_dupXxE0/hqdefault.jpg" alt="Password Hacking" loading="lazy">
@@ -1823,7 +1698,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="SQL" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/UOJZTqA5Loc/hqdefault.jpg" alt="SQL" loading="lazy">
@@ -1847,7 +1721,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Coding Websites" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/koNiEIfo5jY/hqdefault.jpg" alt="Coding Websites" loading="lazy">
@@ -1871,7 +1744,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="GUI vs CLI" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/Xbmqe0oEfJ0/hqdefault.jpg" alt="GUI vs CLI" loading="lazy">
@@ -1895,7 +1767,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Frontend vs Backend" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/vP3TRAsjZss/hqdefault.jpg" alt="Frontend vs Backend" loading="lazy">
@@ -1919,7 +1790,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Web vs App Development" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/vQcHPQJ4Ujs/hqdefault.jpg" alt="Web vs App Development" loading="lazy">
@@ -1943,7 +1813,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Digital Marketing" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/RNh8VHc8qkk/hqdefault.jpg" alt="Digital Marketing" loading="lazy">
@@ -1967,7 +1836,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Study Techniques" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/Zff3rUY0iGg/hqdefault.jpg" alt="Study Techniques" loading="lazy">
@@ -1991,7 +1859,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="CMS vs Custom Code" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/Tm_vWtMsgOc/hqdefault.jpg" alt="CMS vs Custom Code" loading="lazy">
@@ -2017,26 +1884,24 @@
           </div>
         </div>
       </section>
-      
+
       <!-- Docker Section -->
       <section class="video-section" id="docker-section">
         <h2 class="section-title" id="docker-title">Docker</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
             <button class="control-btn" data-filter="beginner">Beginner</button>
             <button class="control-btn" data-filter="advanced">Advanced</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="docker-videos">
+
           <!-- Docker Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="Docker Introduction" data-category="beginner">
             <div class="video-thumbnail">
@@ -2061,7 +1926,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Kubernetes" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/a-nWPre5QYI/hqdefault.jpg" alt="Kubernetes" loading="lazy">
@@ -2085,7 +1949,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Docker Tutorial" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/exmSJpJvIPs/hqdefault.jpg" alt="Docker Tutorial" loading="lazy">
@@ -2111,11 +1974,10 @@
           </div>
         </div>
       </section>
-      
+
       <!-- MERN Stack Section -->
       <section class="video-section" id="mern-stack-section">
         <h2 class="section-title" id="mern-stack-title">MERN Stack</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
@@ -2123,15 +1985,14 @@
             <button class="control-btn" data-filter="advanced">Advanced</button>
             <button class="control-btn" data-filter="project">Projects</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="mern-stack-videos">
+
           <!-- MERN Stack Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="Full Stack Web Development" data-category="advanced">
             <div class="video-thumbnail">
@@ -2156,7 +2017,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="MERN Stack Roadmap" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/CcFIrllSy2o/hqdefault.jpg" alt="MERN Stack Roadmap" loading="lazy">
@@ -2180,7 +2040,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Mastering MERN" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/b5mhh5VQfNw/hqdefault.jpg" alt="Mastering MERN" loading="lazy">
@@ -2204,7 +2063,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="MERN Beginner Guide" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/L_eF8az2cSA/hqdefault.jpg" alt="MERN Beginner Guide" loading="lazy">
@@ -2230,11 +2088,10 @@
           </div>
         </div>
       </section>
-      
+
       <!-- Web Development Section -->
       <section class="video-section" id="web-development-section">
         <h2 class="section-title" id="web-development-title">Web Development</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
@@ -2242,15 +2099,14 @@
             <button class="control-btn" data-filter="advanced">Advanced</button>
             <button class="control-btn" data-filter="career">Career</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="web-development-videos">
+
           <!-- Web Development Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="Web Development Introduction" data-category="beginner">
             <div class="video-thumbnail">
@@ -2275,7 +2131,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Web Development Course" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/l1EssrLxt7E/hqdefault.jpg" alt="Web Development Course" loading="lazy">
@@ -2299,7 +2154,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Frontend Developer Roadmap" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/DbRXv5TXMEE/hqdefault.jpg" alt="Frontend Developer Roadmap" loading="lazy">
@@ -2323,7 +2177,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Frontend vs Backend" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/E_F8MwcVgSA/hqdefault.jpg" alt="Frontend vs Backend" loading="lazy">
@@ -2349,11 +2202,10 @@
           </div>
         </div>
       </section>
-      
+
       <!-- Syntax and Coding Section -->
       <section class="video-section" id="syntax-and-coding-section">
         <h2 class="section-title" id="syntax-and-coding-title">Syntax and Coding</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
@@ -2361,15 +2213,14 @@
             <button class="control-btn" data-filter="advanced">Advanced</button>
             <button class="control-btn" data-filter="career">Career</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="syntax-and-coding-videos">
+
           <!-- Syntax and Coding Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="Why People Quit Coding" data-category="career">
             <div class="video-thumbnail">
@@ -2394,7 +2245,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Memorize Code" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/vP2MNhC_Igw/hqdefault.jpg" alt="Memorize Code" loading="lazy">
@@ -2418,7 +2268,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Coding Myths" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/iH3P3HeF6pE/hqdefault.jpg" alt="Coding Myths" loading="lazy">
@@ -2442,7 +2291,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Inexperienced Programmer" data-category="career">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/T_wIeJLzdoI/hqdefault.jpg" alt="Inexperienced Programmer" loading="lazy">
@@ -2466,7 +2314,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Remember Code" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/M--A6rBEnNE/hqdefault.jpg" alt="Remember Code" loading="lazy">
@@ -2490,7 +2337,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Remember Syntax" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/nUr0-s_2r48/hqdefault.jpg" alt="Remember Syntax" loading="lazy">
@@ -2514,7 +2360,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Coding Notes" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/FKVf1E78Wb8/hqdefault.jpg" alt="Coding Notes" loading="lazy">
@@ -2540,26 +2385,24 @@
           </div>
         </div>
       </section>
-      
+
       <!-- DevOps Section -->
       <section class="video-section" id="devops-section">
         <h2 class="section-title" id="devops-title">DevOps</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
             <button class="control-btn" data-filter="beginner">Beginner</button>
             <button class="control-btn" data-filter="advanced">Advanced</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="devops-videos">
+
           <!-- DevOps Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="DevOps Introduction" data-category="beginner">
             <div class="video-thumbnail">
@@ -2584,7 +2427,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="DevOps Guide" data-category="advanced">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/RRBF2YWXFtY/hqdefault.jpg" alt="DevOps Guide" loading="lazy">
@@ -2610,26 +2452,24 @@
           </div>
         </div>
       </section>
-      
+
       <!-- API Section -->
       <section class="video-section" id="api-section">
         <h2 class="section-title" id="api-title">API</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
             <button class="control-btn" data-filter="beginner">Beginner</button>
             <button class="control-btn" data-filter="advanced">Advanced</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="api-videos">
+
           <!-- API Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="API Introduction" data-category="beginner">
             <div class="video-thumbnail">
@@ -2654,7 +2494,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="REST API" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/WRsKs-K6iII/hqdefault.jpg" alt="REST API" loading="lazy">
@@ -2680,26 +2519,24 @@
           </div>
         </div>
       </section>
-      
+
       <!-- Git and GitHub Section -->
       <section class="video-section" id="git-and-github-section">
         <h2 class="section-title" id="git-and-github-title">Git and GitHub</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
             <button class="control-btn" data-filter="beginner">Beginner</button>
             <button class="control-btn" data-filter="advanced">Advanced</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="git-and-github-videos">
+
           <!-- Git and GitHub Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="Git and GitHub Tutorial" data-category="beginner">
             <div class="video-thumbnail">
@@ -2726,26 +2563,24 @@
           </div>
         </div>
       </section>
-      
+
       <!-- Linux Section -->
       <section class="video-section" id="linux-section">
         <h2 class="section-title" id="linux-title">Linux</h2>
-        
         <div class="controls">
           <div class="filter-controls">
             <button class="control-btn active" data-filter="all">All</button>
             <button class="control-btn" data-filter="beginner">Beginner</button>
             <button class="control-btn" data-filter="advanced">Advanced</button>
           </div>
-          
           <div class="sort-controls">
             <button class="control-btn active" data-sort="default">Default</button>
             <button class="control-btn" data-sort="newest">Newest</button>
             <button class="control-btn" data-sort="oldest">Oldest</button>
           </div>
         </div>
-        
         <div class="video-grid" id="linux-videos">
+
           <!-- Linux Video Links with Thumbnails and Titles -->
           <div class="video-card" data-title="Linux vs Windows" data-category="beginner">
             <div class="video-thumbnail">
@@ -2770,7 +2605,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Install Ubuntu" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/qOktu4-fkfE/hqdefault.jpg" alt="Install Ubuntu" loading="lazy">
@@ -2794,7 +2628,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Linux Introduction" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/rrw-Pv3rc0E/hqdefault.jpg" alt="Linux Introduction" loading="lazy">
@@ -2818,7 +2651,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Linux Tutorial" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/_tCY-c-sPZc/hqdefault.jpg" alt="Linux Tutorial" loading="lazy">
@@ -2842,7 +2674,6 @@
               </a>
             </div>
           </div>
-          
           <div class="video-card" data-title="Install Ubuntu Quick" data-category="beginner">
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/POf5mCs5YgI/hqdefault.jpg" alt="Install Ubuntu Quick" loading="lazy">
@@ -2869,7 +2700,6 @@
         </div>
       </section>
     </main>
-    
     <footer>
       <div class="footer-container">
         <div class="footer-section">
@@ -2883,268 +2713,321 @@
         <p>Created by Shakeeb Ahmed</p>
       </div>
     </footer>
-    
     <button class="back-to-top" id="back-to-top" aria-label="Back to top">
       <i class="fas fa-arrow-up"></i>
     </button>
-    
     <div class="toast" id="toast"></div>
-    
     <script>
-      // Initialize variables
-      const themeToggle = document.getElementById('theme-toggle');
-      const searchToggle = document.getElementById('search-toggle');
-      const searchContainer = document.getElementById('search-container');
-      const searchInput = document.getElementById('search-input');
-      const backToTop = document.getElementById('back-to-top');
-      const toast = document.getElementById('toast');
-      const saveButtons = document.querySelectorAll('.save-btn');
-      const filterButtons = document.querySelectorAll('.filter-controls .control-btn');
-      const sortButtons = document.querySelectorAll('.sort-controls .control-btn');
-      const videoGrids = document.querySelectorAll('.video-grid');
-      
-      // Load saved theme
-      const savedTheme = localStorage.getItem('theme') || 'light';
-      if (savedTheme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-      }
-      
-      // Load saved videos
-      const savedVideos = JSON.parse(localStorage.getItem('savedVideos')) || [];
-      
-      // Theme toggle
-      themeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        
-        if (newTheme === 'dark') {
+      document.addEventListener('DOMContentLoaded', function() {
+        // Initialize variables
+        const themeToggle = document.getElementById('theme-toggle');
+        const searchToggle = document.getElementById('search-toggle');
+        const searchContainer = document.getElementById('search-container');
+        const searchInput = document.getElementById('search-input');
+        const backToTop = document.getElementById('back-to-top');
+        const toast = document.getElementById('toast');
+        const saveButtons = document.querySelectorAll('.save-btn');
+        const filterButtons = document.querySelectorAll('.filter-controls .control-btn');
+        const sortButtons = document.querySelectorAll('.sort-controls .control-btn');
+        const videoGrids = document.querySelectorAll('.video-grid');
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
           themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-        } else {
-          themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
         }
-        
-        showToast(`Switched to ${newTheme} mode`);
-      });
-      
-      // Search toggle
-      searchToggle.addEventListener('click', () => {
-        searchContainer.classList.toggle('active');
-        if (searchContainer.classList.contains('active')) {
-          searchInput.focus();
-        }
-      });
-      
-      // Search functionality
-      searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        
-        videoGrids.forEach(grid => {
-          const videoCards = grid.querySelectorAll('.video-card');
-          
-          videoCards.forEach(card => {
-            const title = card.getAttribute('data-title').toLowerCase();
-            if (title.includes(searchTerm)) {
-              card.style.display = '';
-            } else {
-              card.style.display = 'none';
-            }
-          });
-        });
-      });
-      
-      // Back to top button
-      window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-          backToTop.classList.add('visible');
-        } else {
-          backToTop.classList.remove('visible');
-        }
-      });
-      
-      backToTop.addEventListener('click', () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      });
-      
-      // Save video functionality
-      saveButtons.forEach(button => {
-        const videoCard = button.closest('.video-card');
-        const videoTitle = videoCard.getAttribute('data-title');
-        
-        // Check if video is already saved
-        if (savedVideos.includes(videoTitle)) {
-          button.classList.add('saved');
-          button.innerHTML = '<i class="fas fa-bookmark"></i><span>Saved</span>';
-        }
-        
-        button.addEventListener('click', () => {
-          const isSaved = button.classList.contains('saved');
-          
-          if (isSaved) {
-            // Remove from saved
-            button.classList.remove('saved');
-            button.innerHTML = '<i class="far fa-bookmark"></i><span>Save</span>';
-            
-            const index = savedVideos.indexOf(videoTitle);
-            if (index > -1) {
-              savedVideos.splice(index, 1);
-            }
-            
-            showToast('Removed from saved videos');
+        // Load saved videos
+        const savedVideos = JSON.parse(localStorage.getItem('savedVideos')) || [];
+        // Function to handle thumbnail errors with fallback
+        function handleThumbnailError(img) {
+          const videoId = img.getAttribute('data-video-id');
+          if (!videoId) return;
+          // Get current thumbnail size from the URL
+          const currentSrc = img.getAttribute('src');
+          const currentSize = currentSrc.match(/\/([^\/]+)\.jpg$/);
+          // If we can't determine the current size, start with maxresdefault
+          if (!currentSize) {
+            img.setAttribute('src', `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`);
+            return;
+          }
+          // Define thumbnail sizes in order of preference (highest to lowest quality)
+          const thumbnailSizes = ['maxresdefault', 'sddefault', 'hqdefault', 'mqdefault', 'default'];
+          // Find the current size in the array
+          const currentIndex = thumbnailSizes.indexOf(currentSize[1]);
+          // Try the next size in the array
+          if (currentIndex < thumbnailSizes.length - 1) {
+            const nextSize = thumbnailSizes[currentIndex + 1];
+            img.setAttribute('src', `https://img.youtube.com/vi/${videoId}/${nextSize}.jpg`);
           } else {
-            // Add to saved
-            button.classList.add('saved');
-            button.innerHTML = '<i class="fas fa-bookmark"></i><span>Saved</span>';
-            
-            savedVideos.push(videoTitle);
-            
-            showToast('Saved for later');
+            // All thumbnail sizes failed, use a placeholder
+            img.onerror = null; // Prevent infinite loop
+            const title = img.getAttribute('alt') || 'Video';
+            img.setAttribute('src', `https://via.placeholder.com/320x180?text=${encodeURIComponent(title)}`);
           }
-          
-          localStorage.setItem('savedVideos', JSON.stringify(savedVideos));
-        });
-      });
-      
-      // Filter functionality
-      filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          const filter = button.getAttribute('data-filter');
-          const section = button.closest('.video-section');
-          const videoCards = section.querySelectorAll('.video-card');
-          
-          // Update active button
-          const filterControls = button.parentElement;
-          filterControls.querySelectorAll('.control-btn').forEach(btn => {
-            btn.classList.remove('active');
-          });
-          button.classList.add('active');
-          
-          // Filter videos
-          videoCards.forEach(card => {
-            if (filter === 'all' || card.getAttribute('data-category') === filter) {
-              card.style.display = '';
-            } else {
-              card.style.display = 'none';
+        }
+        // Find all YouTube thumbnail images and set up error handling
+        const thumbnails = document.querySelectorAll('.video-thumbnail img');
+        thumbnails.forEach(thumbnail => {
+          // Extract video ID from src if not already present
+          if (!thumbnail.hasAttribute('data-video-id')) {
+            const src = thumbnail.getAttribute('src');
+            const match = src.match(/\/vi\/([^\/]+)\//);
+            if (match) {
+              thumbnail.setAttribute('data-video-id', match[1]);
             }
-          });
-        });
-      });
-      
-      // Sort functionality
-      sortButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          const sort = button.getAttribute('data-sort');
-          const section = button.closest('.video-section');
-          const videoGrid = section.querySelector('.video-grid');
-          const videoCards = Array.from(section.querySelectorAll('.video-card'));
-          
-          // Update active button
-          const sortControls = button.parentElement;
-          sortControls.querySelectorAll('.control-btn').forEach(btn => {
-            btn.classList.remove('active');
-          });
-          button.classList.add('active');
-          
-          // Sort videos
-          if (sort === 'newest') {
-            // Sort by views (descending) as a proxy for newest
-            videoCards.sort((a, b) => {
-              const viewsA = parseInt(a.querySelector('.video-meta span').textContent.replace(/[^\d]/g, ''));
-              const viewsB = parseInt(b.querySelector('.video-meta span').textContent.replace(/[^\d]/g, ''));
-              return viewsB - viewsA;
-            });
-          } else if (sort === 'oldest') {
-            // Sort by views (ascending) as a proxy for oldest
-            videoCards.sort((a, b) => {
-              const viewsA = parseInt(a.querySelector('.video-meta span').textContent.replace(/[^\d]/g, ''));
-              const viewsB = parseInt(b.querySelector('.video-meta span').textContent.replace(/[^\d]/g, ''));
-              return viewsA - viewsB;
-            });
           }
-          
-          // Re-append sorted cards
-          videoCards.forEach(card => {
-            videoGrid.appendChild(card);
+          // Set error handler
+          thumbnail.addEventListener('error', function() {
+            handleThumbnailError(this);
           });
-        });
-      });
-      
-      // Show toast notification
-      function showToast(message) {
-        toast.textContent = message;
-        toast.classList.add('show');
-        
-        setTimeout(() => {
-          toast.classList.remove('show');
-        }, 3000);
-      }
-      
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          
-          const targetId = this.getAttribute('href');
-          if (targetId === '#') return;
-          
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            targetElement.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
+          // Check if image is already broken (for images that loaded before the script)
+          if (thumbnail.naturalWidth === 0) {
+            handleThumbnailError(thumbnail);
           }
         });
-      });
-      
-      // Lazy loading for images
-      if ('IntersectionObserver' in window) {
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const img = entry.target;
-              img.src = img.dataset.src;
-              img.classList.remove('lazy');
-              imageObserver.unobserve(img);
-            }
-          });
+        // Theme toggle
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('theme', newTheme);
+          if (newTheme === 'dark') {
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+          } else {
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+          }
+          showToast(`Switched to ${newTheme} mode`);
         });
-        
-        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-          img.classList.add('lazy');
-          imageObserver.observe(img);
+        // Search toggle
+        searchToggle.addEventListener('click', () => {
+          searchContainer.classList.toggle('active');
+          if (searchContainer.classList.contains('active')) {
+            searchInput.focus();
+          }
         });
-      }
-      
-      // Keyboard navigation
-      document.addEventListener('keydown', (e) => {
-        // Escape key to close search
-        if (e.key === 'Escape' && searchContainer.classList.contains('active')) {
-          searchContainer.classList.remove('active');
-          searchInput.value = '';
-          
-          // Reset video visibility
+        // Search functionality
+        searchInput.addEventListener('input', (e) => {
+          const searchTerm = e.target.value.toLowerCase();
           videoGrids.forEach(grid => {
             const videoCards = grid.querySelectorAll('.video-card');
             videoCards.forEach(card => {
-              card.style.display = '';
+              const title = card.getAttribute('data-title').toLowerCase();
+              if (title.includes(searchTerm)) {
+                card.style.display = '';
+              } else {
+                card.style.display = 'none';
+              }
             });
           });
+        });
+        // Back to top button
+        window.addEventListener('scroll', () => {
+          if (window.pageYOffset > 300) {
+            backToTop.classList.add('visible');
+          } else {
+            backToTop.classList.remove('visible');
+          }
+        });
+        backToTop.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+        // Save video functionality
+        saveButtons.forEach(button => {
+          const videoCard = button.closest('.video-card');
+          const videoTitle = videoCard.getAttribute('data-title');
+          // Check if video is already saved
+          if (savedVideos.includes(videoTitle)) {
+            button.classList.add('saved');
+            button.innerHTML = '<i class="fas fa-bookmark"></i><span>Saved</span>';
+          }
+          button.addEventListener('click', () => {
+            const isSaved = button.classList.contains('saved');
+            if (isSaved) {
+              // Remove from saved
+              button.classList.remove('saved');
+              button.innerHTML = '<i class="far fa-bookmark"></i><span>Save</span>';
+              const index = savedVideos.indexOf(videoTitle);
+              if (index > -1) {
+                savedVideos.splice(index, 1);
+              }
+              showToast('Removed from saved videos');
+            } else {
+              // Add to saved
+              button.classList.add('saved');
+              button.innerHTML = '<i class="fas fa-bookmark"></i><span>Saved</span>';
+              savedVideos.push(videoTitle);
+              showToast('Saved for later');
+            }
+            localStorage.setItem('savedVideos', JSON.stringify(savedVideos));
+          });
+        });
+        // Filter functionality
+        filterButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            const section = button.closest('.video-section');
+            const videoCards = section.querySelectorAll('.video-card');
+            // Update active button
+            const filterControls = button.parentElement;
+            filterControls.querySelectorAll('.control-btn').forEach(btn => {
+              btn.classList.remove('active');
+            });
+            button.classList.add('active');
+            // Filter videos
+            videoCards.forEach(card => {
+              if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                card.style.display = '';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+          });
+        });
+        // Sort functionality
+        sortButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const sort = button.getAttribute('data-sort');
+            const section = button.closest('.video-section');
+            const videoGrid = section.querySelector('.video-grid');
+            const videoCards = Array.from(section.querySelectorAll('.video-card'));
+            // Update active button
+            const sortControls = button.parentElement;
+            sortControls.querySelectorAll('.control-btn').forEach(btn => {
+              btn.classList.remove('active');
+            });
+            button.classList.add('active');
+            // Sort videos
+            if (sort === 'newest') {
+              // Sort by views (descending) as a proxy for newest
+              videoCards.sort((a, b) => {
+                const viewsA = parseInt(a.querySelector('.video-meta span').textContent.replace(/[^\d]/g, ''));
+                const viewsB = parseInt(b.querySelector('.video-meta span').textContent.replace(/[^\d]/g, ''));
+                return viewsB - viewsA;
+              });
+            } else if (sort === 'oldest') {
+              // Sort by views (ascending) as a proxy for oldest
+              videoCards.sort((a, b) => {
+                const viewsA = parseInt(a.querySelector('.video-meta span').textContent.replace(/[^\d]/g, ''));
+                const viewsB = parseInt(b.querySelector('.video-meta span').textContent.replace(/[^\d]/g, ''));
+                return viewsA - viewsB;
+              });
+            }
+            // Re-append sorted cards
+            videoCards.forEach(card => {
+              videoGrid.appendChild(card);
+            });
+          });
+        });
+        // Show toast notification
+        function showToast(message) {
+          toast.textContent = message;
+          toast.classList.add('show');
+          setTimeout(() => {
+            toast.classList.remove('show');
+          }, 3000);
         }
-        
-        // Ctrl/Cmd + K to focus search
-        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-          e.preventDefault();
-          searchContainer.classList.add('active');
-          searchInput.focus();
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+                imageObserver.unobserve(img);
+              }
+            });
+          });
+          document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+            img.classList.add('lazy');
+            imageObserver.observe(img);
+          });
         }
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+          // Escape key to close search
+          if (e.key === 'Escape' && searchContainer.classList.contains('active')) {
+            searchContainer.classList.remove('active');
+            searchInput.value = '';
+            // Reset video visibility
+            videoGrids.forEach(grid => {
+              const videoCards = grid.querySelectorAll('.video-card');
+              videoCards.forEach(card => {
+                card.style.display = '';
+              });
+            });
+          }
+          // Ctrl/Cmd + K to focus search
+          if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+            e.preventDefault();
+            searchContainer.classList.add('active');
+            searchInput.focus();
+          }
+        });
       });
     </script>
-  </body>
 </html>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle thumbnail errors with fallback
+    function handleThumbnailError(img) {
+      const videoId = img.getAttribute('data-video-id');
+      if (!videoId) return;
+      // Get current thumbnail size from the URL
+      const currentSrc = img.getAttribute('src');
+      const currentSize = currentSrc.match(/\/([^\/]+)\.jpg$/)[1];
+      // Define thumbnail sizes in order of preference (highest to lowest quality)
+      const thumbnailSizes = ['maxresdefault', 'sddefault', 'hqdefault', 'mqdefault', 'default'];
+      // Find the current size in the array
+      const currentIndex = thumbnailSizes.indexOf(currentSize);
+      // Try the next size in the array
+      if (currentIndex < thumbnailSizes.length - 1) {
+        const nextSize = thumbnailSizes[currentIndex + 1];
+        img.setAttribute('src', `https://img.youtube.com/vi/${videoId}/${nextSize}.jpg`);
+      } else {
+        // All thumbnail sizes failed, use a placeholder
+        img.onerror = null; // Prevent infinite loop
+        const title = img.getAttribute('alt') || 'Video';
+        img.setAttribute('src', `https://via.placeholder.com/320x180?text=${encodeURIComponent(title)}`);
+      }
+    }
+    // Find all YouTube thumbnail images
+    const thumbnails = document.querySelectorAll('.video-thumbnail img');
+    thumbnails.forEach(thumbnail => {
+      // Extract video ID from src if not already present
+      if (!thumbnail.hasAttribute('data-video-id')) {
+        const src = thumbnail.getAttribute('src');
+        const match = src.match(/\/vi\/([^\/]+)\//);
+        if (match) {
+          thumbnail.setAttribute('data-video-id', match[1]);
+        }
+      }
+      // Set error handler
+      thumbnail.addEventListener('error', function() {
+        handleThumbnailError(this);
+      });
+      // Check if image is already broken (for images that loaded before the script)
+      if (thumbnail.naturalWidth === 0) {
+        handleThumbnailError(thumbnail);
+      }
+    });
+  });
+</script>
